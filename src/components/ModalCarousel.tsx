@@ -173,7 +173,7 @@ const ModalCarousel = ({
         </div>
       </div>
 
-      <div className="absolute bottom-4 flex items-center gap-6 z-50">
+      <div className="absolute -bottom-8 flex items-center gap-6 z-50">
         <button
           type="button"
           onClick={() => emblaApi?.scrollPrev()}

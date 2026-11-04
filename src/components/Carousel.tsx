@@ -99,7 +99,7 @@ const EmblaCarousel = (props: PropType) => {
                   ref={(el) => {
                     slideRefs.current[index] = el;
                   }}
-                  className="relative h-full w-full focus-visible:z-10 focus-visible:border-4 focus-visible:border-cyan-400"
+                  className="relative h-full w-full cursor-pointer focus-visible:z-10 focus-visible:border-4 focus-visible:border-cyan-400"
                   layoutId={`image-${galleryId}-${slide.id}`}
                   onClick={() => {
                     openModal(slide.id);
