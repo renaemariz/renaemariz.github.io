@@ -32,9 +32,9 @@ const Card = <T,>({
       </div>
 
       <div>
-        <div className={`${cardBody ? "flex-grow" : ""}`}>
-          <div className="card-header bg-linear-to-br from-indigo-400 to-cyan-400 bg-[length:100%_2px] bg-no-repeat bg-bottom p-8 md:p-6">
-            <h3 className="text-md font-semibold uppercase text-main">
+        <div className={`${cardBody ? "grow" : ""}`}>
+          <div className="card-header bg-linear-to-br from-indigo-400 to-cyan-400 bg-size-[100%_2px] bg-no-repeat bg-bottom p-8 md:p-6">
+            <h3 className="text-sm font-semibold uppercase text-main">
               {title}
             </h3>
             <p className="text-sm font-semibold text-main">{subTitle}</p>
@@ -42,7 +42,7 @@ const Card = <T,>({
 
           {/* can support react nodes */}
           {cardBody && (
-            <div className="card-body p-8 md:p-6  text-sm text-secondary leading-relaxed flex-grow">
+            <div className="card-body p-8 md:p-6  text-sm text-secondary leading-relaxed grow">
               {cardBody}
             </div>
           )}

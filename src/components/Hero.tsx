@@ -27,7 +27,7 @@ export default function Hero() {
       className="relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-primary"
     >
       {/* 1. BACKGROUND LAYER: Mesh Gradient */}
-      <div className="absolute -inset-[200px] z-0 pointer-events-none opacity-40 dark:opacity-20">
+      <div className="absolute -inset-50 z-0 pointer-events-none opacity-40 dark:opacity-20">
         <div className="absolute inset-0 bg-(image:--bg-hero)" />
       </div>
       <div className="container  mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center z-10 pt-20">
@@ -49,7 +49,7 @@ export default function Hero() {
 
             <motion.h1
               variants={fadeInY}
-              className="text-4xl font-extrabold tracking-[0.1em] text-main dark:text-zinc-100 uppercase mb-4"
+              className="text-4xl font-extrabold tracking-widest text-main dark:text-zinc-100 uppercase mb-4"
             >
               Renae Mariz Cariño
             </motion.h1>
@@ -65,7 +65,7 @@ export default function Hero() {
                   variants={fadeInYSwipe}
                   animate="visible"
                   exit="exit"
-                  className="inline-block py-1 text-transparent bg-clip-text bg-linear-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent"
+                  className="inline-block py-1 text-transparent bg-clip-text bg-linear-to-r from-indigo-400 to-cyan-400"
                 >
                   {roles[roleIndex]}
                 </motion.span>
@@ -75,7 +75,7 @@ export default function Hero() {
 
           <motion.p
             variants={fadeInY}
-            className="text-md text-secondary max-w-md mx-auto lg:mx-0 leading-relaxed"
+            className="text-sm text-secondary max-w-md mx-auto lg:mx-0 leading-relaxed"
           >
             I build scalable web applications using{" "}
             <span className="text-main dark:text-zinc-100 font-semibold">
@@ -114,7 +114,7 @@ export default function Hero() {
           className="hidden lg:block relative justify-self-center  lg:justify-self-end group "
         >
           {/* Outer Glow */}
-          <div className="relative w-[340px] md:w-[400px] bg-white/80 dark:bg-zinc-900/80 border border-slate-200 dark:border-zinc-800 rounded-[2.5rem] shadow-2xl overflow-hidden transform transition-all duration-700 group-hover:-translate-y-2">
+          <div className="relative w-85 md:w-100 bg-white/80 dark:bg-zinc-900/80 border border-slate-200 dark:border-zinc-800 rounded-[2.5rem] shadow-2xl overflow-hidden transform transition-all duration-700 group-hover:-translate-y-2">
             {/* Header / Traffic Lights */}
             <div className="flex items-center justify-between px-8 py-5 border-b border-slate-100 dark:border-zinc-800">
               <div className="flex gap-2">
@@ -129,7 +129,7 @@ export default function Hero() {
 
             <div className="p-8 space-y-6">
               {/* Dashboard Hero Block */}
-              <div className="h-28 rounded-2xl bg-gradient-to-br from-blue-600 to-indigo-600 p-4 flex flex-col justify-end">
+              <div className="h-28 rounded-2xl bg-linear-to-br from-blue-600 to-indigo-600 p-4 flex flex-col justify-end">
                 <div className="h-1.5 w-12 bg-white/30 rounded-full mb-2" />
                 <div className="h-3 w-24 bg-white/60 rounded-full" />
               </div>
@@ -141,7 +141,7 @@ export default function Hero() {
                   viewBox="0 0 300 100"
                 >
                   <path
-                    className="fill-none stroke-blue-500 stroke-[3] [stroke-dasharray:400] [stroke-dashoffset:400] animate-draw"
+                    className="fill-none stroke-blue-500 stroke-3 [stroke-dasharray:400] [stroke-dashoffset:400] animate-draw"
                     d="M0,80 C50,20 100,90 150,40 C200,10 250,80 300,30"
                   />
                 </svg>

@@ -8,7 +8,26 @@ import { motion } from "framer-motion";
 const Experience = () => {
   const experiences = [
     {
-      date: "2024 — 2026",
+      date: "June 2026 — Oct 2026",
+      company: "",
+      role: "Senior Frontend Developer",
+      description: (
+        <>
+          <ul className="list-disc pl-5 marker:text-indigo-300">
+            <li>
+              Maintained and enhanced a multi-tenant a Next.js (App Router)
+              portal migrated from a legacy Angular application by updating API
+              integrations, converting legacy features to the new architecture,
+              and implementing fixes and enhancements based on client
+              requirements.
+            </li>
+          </ul>
+        </>
+      ),
+      tech: [],
+    },
+    {
+      date: "September 2024 — May 2026",
       company: "Xentra Infotech Solutions Inc",
       role: "Senior Frontend Developer",
       description: (
@@ -34,7 +53,7 @@ const Experience = () => {
       tech: [],
     },
     {
-      date: "2021 — 2024",
+      date: "March 2021 — August 2024",
       company: "Xentra Infotech Solutions Inc",
       role: "Frontend Developer",
       description: (
@@ -57,7 +76,7 @@ const Experience = () => {
       tech: [],
     },
     {
-      date: "2016 — 2020",
+      date: "October 2016 — March 2020",
       company: "Miyens Technologies",
       role: "Quality Assurance / Developer",
       description: (
@@ -116,21 +135,21 @@ const Experience = () => {
             >
               {/* Left Column: Date and Company */}
               <motion.div
-                className="md:w-1/4 flex flex-col pt-2 text-left md:text-right"
+                className="md:w-1/3 flex flex-col pt-2 text-left md:text-right"
                 variants={fadeInLeft}
                 initial="hidden"
                 animate="visible"
               >
-                <span className="text-lg font-bold tracking-wider text-indigo-600 dark:text-indigo-400 uppercase">
+                <span className="text-xl font-bold tracking-wider text-indigo-600 dark:text-indigo-400 uppercase">
                   {exp.date}
                 </span>
-                <span className="text-secondary font-medium text-md">
+                <span className="text-secondary font-medium text-lg">
                   {exp.company}
                 </span>
               </motion.div>
 
               {/* Right Column: Content */}
-              <div className="md:w-2/4 pt-1">
+              <div className="md:w-2/3 pt-1">
                 <motion.div className="" variants={fadeInRight}>
                   <Card
                     key={index}

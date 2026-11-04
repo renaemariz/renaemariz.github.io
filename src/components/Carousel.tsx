@@ -54,7 +54,7 @@ const EmblaCarousel = (props: PropType) => {
               </div>
             ))}
           </div>
-          <div className="embla__controls bg-black/60 w-[100%]">
+          <div className="embla__controls bg-black/60 w-full">
             <div className="embla__dots ">
               {scrollSnaps.map((_, index) => (
                 <DotButton

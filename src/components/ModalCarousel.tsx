@@ -27,7 +27,7 @@ const ModalCarousel = ({ slides, initialIndex, onClose }: PropType) => {
       {/* Close Button */}
       <button
         onClick={onClose}
-        className="absolute top-[-30px] right-[5%] h-10 w-10 z-50 text-white text-xl bg-slate-600/80 rounded-full"
+        className="absolute -top-7.5 right-[5%] h-10 w-10 z-50 text-white text-xl bg-slate-600/80 rounded-full"
       >
         ✕
       </button>

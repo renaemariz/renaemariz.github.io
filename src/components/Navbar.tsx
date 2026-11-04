@@ -12,7 +12,7 @@ export default function Navbar({ activeNav }: NavbarProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const links = ["About", "Experience", "Projects", "Skills", "Contact"];
   return (
-    <nav className="fixed top-0 left-0 w-full z-[100] py-4 bg-nav-bg border-b border-slate-100 dark:border-zinc-900">
+    <nav className="fixed top-0 left-0 w-full z-100 py-4 bg-nav-bg border-b border-slate-100 dark:border-zinc-900">
       <div className="container mx-auto px-2 flex items-center justify-between gap-1 md:gap-2">
         {/* LOGO */}
         <Link href="/" className="text-lg font-bold text-main uppercase">

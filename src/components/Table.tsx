@@ -25,7 +25,7 @@ const InfoTable = ({ title, data }: InfoTableProps) => {
         {/* Header Area  */}
         <div className="p-6 border-b border-slate-100 dark:border-slate-800 flex justify-between items-center bg-slate-50/50 dark:bg-slate-800/50">
           <motion.h2
-            className="text-md text-slate-900 dark:text-slate-100 font-bold uppercase"
+            className="text-sm text-slate-900 dark:text-slate-100 font-bold uppercase"
             variants={fadeInY}
           >
             {title}

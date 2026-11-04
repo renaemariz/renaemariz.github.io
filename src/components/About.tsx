@@ -64,7 +64,7 @@ const About = () => {
         <div className="space-y-2">
           <div className="flex items-center gap-2">
             <span className="text-sm font-bold text-secondary">
-              Work from home & Hybrid Ready
+              Work from Home Preferred • Minimal Hybrid
             </span>
           </div>
 
