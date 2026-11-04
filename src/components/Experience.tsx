@@ -140,10 +140,10 @@ const Experience = () => {
                 initial="hidden"
                 animate="visible"
               >
-                <span className="text-xl font-bold tracking-wider text-indigo-600 dark:text-indigo-400 uppercase">
+                <span className="text-lg md:text-xl font-bold tracking-wider text-indigo-600 dark:text-indigo-400 uppercase">
                   {exp.date}
                 </span>
-                <span className="text-secondary font-medium text-lg">
+                <span className="text-secondary font-medium text-md lg:text-lg">
                   {exp.company}
                 </span>
               </motion.div>

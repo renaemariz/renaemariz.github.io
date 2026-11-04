@@ -27,18 +27,17 @@ const ModalCarousel = ({ slides, initialIndex, onClose }: PropType) => {
       {/* Close Button */}
       <button
         onClick={onClose}
-        className="absolute -top-7.5 right-[5%] h-10 w-10 z-50 text-white text-xl bg-slate-600/80 rounded-full"
+        className="absolute -top-7.5 right-[5%] h-10 w-10 z-50 text-white text-xl bg-slate-600/80 rounded-full cursor-pointer"
       >
         ✕
       </button>
-
       {/* MODAL CAROUSEL VIEWPORT */}
       <div className="w-full h-full overflow-hidden" ref={emblaRef}>
         <div className="embla__container flex h-full">
           {slides.map((slide) => (
             <div
               key={slide.id}
-              className="embla__slide flex-[0_0_100%] min-w-0 flex items-center justify-center p-4"
+              className="embla__slide flex-[0_0_100%] min-w-0 flex items-center justify-center p-4 cursor-grab"
             >
               <motion.div
                 layoutId={`img-${slide.id}`} // Matches the main carousel ID

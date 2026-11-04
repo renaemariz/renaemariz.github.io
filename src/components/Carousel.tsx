@@ -38,7 +38,7 @@ const EmblaCarousel = (props: PropType) => {
         <div className="embla__viewport" ref={emblaRef}>
           <div className="embla__container">
             {slides.map((slide) => (
-              <div key={slide.id} className="embla__slide">
+              <div key={slide.id} className="embla__slide cursor-pointer">
                 <motion.div
                   className="relative h-full min-w-full overflow-hidden"
                   layoutId={`image-${slide.id}`}
@@ -81,7 +81,7 @@ const EmblaCarousel = (props: PropType) => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                className="fixed inset-0 z-50 flex items-center justify-center bg-black/80"
+                className="fixed inset-0 z-150 flex items-center justify-center bg-black/90"
               >
                 <motion.div
                   layoutId={`image-${selectedId}`}
