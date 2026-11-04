@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 const Projects = () => {
   const projects = [
     {
+      id: "project-1",
       title: "Admin Portal",
       subTitle: "Cafe Solutions - Australia",
       description: (
@@ -58,6 +59,7 @@ const Projects = () => {
       ],
     },
     {
+      id: "project-2",
       title: "Customer Portal",
       subTitle: "Casino Marker Technology - Las Vegas",
       description: (
@@ -100,6 +102,7 @@ const Projects = () => {
       ],
     },
     {
+      id: "project-3",
       title: "Merchant App",
       subTitle: "Financial Services - Bahamas",
       description: (
@@ -176,9 +179,10 @@ const Projects = () => {
           className="grid grid-cols-1 gap-8"
         >
           {projects.map((project, index) => (
-            <motion.div key={index} variants={fadeInLeft}>
+            <motion.div key={project.id} variants={fadeInLeft}>
               <Card
-                key={index}
+                key={project.id}
+                galleryId={project.id}
                 index={index}
                 title={project.title}
                 subTitle={project.subTitle}

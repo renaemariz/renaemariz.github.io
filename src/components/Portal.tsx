@@ -7,9 +7,13 @@ export type PortalProps = {
 };
 
 export const Portal = ({ children }: PortalProps) => {
-  const [portalRoot] = useState<Element | null>(document.body);
+  const [portalRoot, setPortalRoot] = useState<HTMLElement | null>(null);
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    // The portal target is browser-only and must be set after hydration.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setPortalRoot(document.body);
+  }, []);
 
   if (!portalRoot) return null;
 

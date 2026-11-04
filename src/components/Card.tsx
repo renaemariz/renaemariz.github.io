@@ -2,7 +2,8 @@ import React from "react";
 import EmblaCarousel, { Slide } from "./Carousel";
 
 type CardProps<T> = {
-  index: number;
+  index: number | string;
+  galleryId?: string | number;
   title?: string;
   subTitle?: string;
   cardBody?: string | React.ReactNode;
@@ -21,6 +22,7 @@ const Card = <T,>({
   renderItem,
   renderItemStyle = "auto",
   slides,
+  galleryId,
 }: CardProps<T>) => {
   return (
     <div
@@ -28,7 +30,7 @@ const Card = <T,>({
       className={`${slides ? "grid grid-cols-1 lg:grid-cols-2 gap-4" : ""} group rounded-3xl border border-card-border bg-card-bg shadow-xl flex flex-col h-full overflow-hidden`}
     >
       <div className="flex-1 min-h-0">
-        {slides && <EmblaCarousel slides={slides} />}
+        {slides && <EmblaCarousel galleryId={galleryId} slides={slides} />}
       </div>
 
       <div>
