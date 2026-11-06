@@ -45,12 +45,12 @@ export function useSectionObserver(): string {
 
     if (window.location.hash !== newHash) {
       const timeoutId = setTimeout(() => {
-        router.replace(`${newHash}`, { scroll: false });
-      }, 0);
+        window.history.replaceState(null, "", newHash);
+      }, 300);
 
       return () => clearTimeout(timeoutId);
     }
-  }, [activeNav, router]);
+  }, [activeNav]);
 
   return activeNav;
 }
