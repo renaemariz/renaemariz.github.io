@@ -1,9 +1,8 @@
-"use client";
 import React from "react";
-import InfoTable from "./Table";
+import InfoTable from "../Table";
 import { motion } from "framer-motion";
 import { fadeInY } from "@/lib/motions";
-import Pill from "./Pill";
+import Pill from "../Pill";
 const About = () => {
   const aboutData = [
     {

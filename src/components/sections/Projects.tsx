@@ -1,7 +1,6 @@
-"use client";
 import React from "react";
-import Card from "./Card";
-import Pill from "./Pill";
+import Card from "../Card";
+import Pill from "../Pill";
 import { fadeInLeft, fadeInY, staggerContainer } from "@/lib/motions";
 import { motion } from "framer-motion";
 

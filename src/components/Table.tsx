@@ -1,4 +1,3 @@
-"use client";
 import { fadeInY, staggerContainer } from "@/lib/motions";
 import React from "react";
 import { motion } from "framer-motion";

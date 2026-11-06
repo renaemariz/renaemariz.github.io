@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { ThemeProvider } from "../context/ThemeContext";
+import { ThemeProvider } from "../providers/ThemeProvider";
 const baseUrl =
   process.env.NEXT_PUBLIC_BASE_URL ?? "https://renaemariz.github.io";
 

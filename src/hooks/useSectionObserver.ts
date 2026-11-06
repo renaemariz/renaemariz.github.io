@@ -1,10 +1,8 @@
 // useSectionObserver.ts
-import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 export function useSectionObserver(): string {
   const [activeNav, setActiveNav] = useState<string>("");
-  const router = useRouter();
 
   useEffect(() => {
     const sections = document.querySelectorAll("section[id]");
@@ -41,12 +39,11 @@ export function useSectionObserver(): string {
   useEffect(() => {
     if (!activeNav) return;
 
-    const newHash = activeNav === "hero" ? "" : `#${activeNav}`;
-
+    const newHash = activeNav === "hero" ? " " : `#${activeNav}`;
     if (window.location.hash !== newHash) {
       const timeoutId = setTimeout(() => {
         window.history.replaceState(null, "", newHash);
-      }, 300);
+      }, 200);
 
       return () => clearTimeout(timeoutId);
     }

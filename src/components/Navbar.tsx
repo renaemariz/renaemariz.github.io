@@ -1,6 +1,6 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import { useTheme } from "../context/ThemeContext";
+import React, { useState } from "react";
+import { useTheme } from "../providers/ThemeProvider";
 import Link from "next/link";
 import { fadeIn } from "@/lib/motions";
 import { motion } from "framer-motion";
