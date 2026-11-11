@@ -14,10 +14,11 @@ const Experience = () => {
         <>
           <ul className="list-disc pl-5 marker:text-indigo-300">
             <li>
-              Maintained and enhanced a multi-tenant a Next.js (App Router)
-              portal migrated from a legacy Angular application by updating API
-              integrations, converting legacy features to the new architecture,
-              and implementing fixes and enhancements based on client
+              Contributed to the development of a new multi-tenant web portal
+              using Next.js (App Router) as part of the transition from an
+              existing Angular application. Refactored and migrated legacy
+              features to the new architecture, modernized API integrations, and
+              implemented new functionalities to support evolving client
               requirements.
             </li>
           </ul>
